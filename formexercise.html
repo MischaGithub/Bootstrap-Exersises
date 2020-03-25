@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--Creating the form-->
+    <head>
+        <title>Form Exercise</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width , initial-scale=1">
+        <script src="jquery.js"></script>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <script src="js/bootstrap.js"></script>
+
+    </head>
+    <body>
+        <!--Disabling the the form on the navigation bar-->
+        <div class="list-group">
+            <a href="formexercise.html" class="list-group-item disabled">Form</a>
+            <a href ="tables exercise.html" class="list-group-item ">Table</a>
+        
+        </div>
+        <!--Creating the form for all the fields to be filled in and displaying the correct feedback-->
+        <div class="container">
+            <h2>Form Validation</h2>
+            <form action="action_page.php" class="was-validated">
+                <!--Creating the username field to be filled in-->
+                <div class="form-group">
+                    <label for="uname">Username</label>
+                    <input type="text" class="form-control" id="uname" placeholder="Enter Username"
+                    name="uname" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <!--Creating the first name field to be filled in-->
+                <div class="form-group">
+                    <label for="fname">First Name</label>
+                    <input type="text" class="form-control" id="fname" placeholder="Enter First Name"
+                    name="fname" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <!--Creating the last name field to be filled in-->
+                <div class="form-group">
+                    <label for="lname">Last Name</label>
+                    <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                    name="lname" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+
+                </div>
+
+                <!--Creatinng the password field to be filled in-->
+                <div class="form-group">
+                    <label for="pwd">Password</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Enter Password"
+                    name="pwd" required>
+                    <div class="valid-feedback">Valid</div>
+                    <div class="invalid-feedback">Invalid</div>
+                </div>
+                <!--Creating a primary button for all fields to be submitted-->
+                <button type="submit" class="btn btn-primary">Submit</button>
+                
+            </form>
+
+        </div>
+    </body>
+</html>
