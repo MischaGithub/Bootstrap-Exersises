@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0
+  }
+  
+  /* Style the navigation bar */
+.navbar {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.05) ;
+  overflow: auto;
+}
+
+/* Navbar links */
+.navbar a {
+  float: left;
+  text-align: center;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Navbar links on mouse-over */
+.navbar a:hover {
+  background-color: lightgrey;
+}
+
+/* Current/active navbar link */
+.active {
+  background-color:  rgba(255, 255, 255, 0.05);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}
+
+/*The body font and Background color*/
+  body {
+    font-family: 'Roboto', sans-serif;
+      background-color: #212121;
+
+  }
+  
+  /*Making the container display the cards next to each other*/
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 64px;
+      justify-content: center
+  }
+  /*Having the cards display*/
+  .material-card {
+      all: unset;
+    background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 10px black;
+    border-radius: 4px;
+    margin: 16px;
+    color:  white
+  }
+  
+  /*Making the cards hoverable*/
+  .material-card:hover {
+    background-color: rgba(255, 255, 255, 0.12); 
+    transform: scale(1.0125);
+      box-shadow: 0 0 15px black
+  }
+
+  /*Having the images max width of its image banner*/
+  .material-card .banner-image {
+    max-width: 350px;
+  }
+  
+  /*Setting the text*/
+  .material-card .title-text {
+    font-size: 13px;
+    margin: 10px;
+    padding: 0px;
+    
+  }
+  
+  .material-card p {
+    font-size: 13px;
+    padding: 0px;
+    margin: 8px 0 16px 0;
+    
+  }
