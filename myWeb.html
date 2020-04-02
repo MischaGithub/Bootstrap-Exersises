@@ -1,249 +1,379 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>MyWeb</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel='stylesheet' href="myWeb.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="myWeb.css" />
+  </head>
 
-<body>
+  <body>
     <!--Creating the navbar-->
-    
+
     <div class="navbar">
-        <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a href="#"><i class="fa fa-fw fa-feed"></i> News Feed</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i> User</a>
-        <a href="#"><i class="fa fa-fw fa-user"></i> Admin</a>
-      </div>
-
-      <!--The container for the layout of the cards-->
-        <div class='header'></div>
-        <div class='showcase'></div>
-        <div class='card-container'>
-
-            <!--Card 1-->
-            <button class='material-card'>
-                <img class='banner-image'  alt='placeholder' src="images/user1.jpg">
-                <section class='title-text'>
-                    <h1>Admin</h1>
-                    <p class='decription'>Employee Information:</p>
-                    <p>First Name: Jane</p>
-                    <p>Last Name: Damon</p>
-                    <p>Email: janedamon@company.com</p>
-                    <p>Cell: 071 875 2002</p>
-                    <p>Landline: 021 650 8001</p>
-                </section> 
-            </button>
-
-            <!--Card 2-->
-            <button class='material-card'>
-                <img class='banner-image' alt='placeholder'
-                src="images/user2.jpg">
-                <section class='title-text'>
-                    <h1>Legal</h1>
-                    <p class='decription'>Employee Information:</p>
-                    <p>First Name: Josh</p>
-                    <p>Last Name: Green</p>
-                    <p>Email: joshgreen@company.com</p>
-                    <p>Cell: 064 909 2898</p>
-                    <p>Landline: 021 750 2000</p>
-                </section>
-            </button>
-            <!--Card 3-->
-            <button class='material-card'>
-                <img class='banner-image' alt='placeholder'
-                src="images/user3.jpg">
-                <section class='title-text'>
-                    <h1>Makerting</h1>
-                    <p class='decription'>Employee information</p>
-                    <p>First Name: Sophie</p>
-                    <p>Last Name: Lang</p>
-                    <p>Email: sophielang@company.com</p>
-                    <p>Cell: 061 999 2818</p>
-                    <p>Landline: 021 670 3030</p>
-
-                </section>
-            </button>
-            <!--Card 4-->
-            <button class='material-card'>
-                <img class='banner-image' alt='placeholder'
-                src="images/user4.jpg">
-                <section class='title-text'>
-                    <h1>Legal</h1>
-                    <p class='decription'>Employee Information</p>
-                    <p>First Name: Jessica</p>
-                    <p>Last Name: Wales</p>
-                    <p>Email: jessicawales@company.com</p>
-                    <p>Cell: 073 504 8080</p>
-                    <p>Landline: 021 455 5190</p>
-                
-                </section>
-             </button>
-             <!--Card 5-->
-            <button class='material-card'>
-                <img class='banner-image' alt='placeholder'
-                src="images/user5.jpg">
-                <section class='title-text'>
-                    <h1>Marketing</h1>
-                    <p class='decription'>Employee Information</p>
-                    <p>First Name: Cassie</p>
-                    <p>Last Name: Wyngaardt</p>
-                    <p>Email: cassiewygaardt@company.com</p>
-                    <p>Cell: 081 808 3121</p>
-                    <p>Landline: 021 896 5004</p>
-
-                </section>
-            </button>
-            <!--Card 6-->
-            <button class='material-card'>
-                <img class='banner-image' alt='placeholder'
-                src="images/user6.jpg">
-                <section class='title-text'>
-                    <h1>Engineering</h1>
-                    <p class='decription'>Employee Information</p>
-                    <p>First Name: Cody</p>
-                    <p>Last Name: Evans</p>
-                    <p>Email: codyevans@company.com</p>
-                    <p>Cell: 078 403 7227</p>
-                    <p>Landline: 021 674 2874</p>
-
-                </section>
-            </button>
-
+      <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a href="#"><i class="fa fa-fw fa-feed"></i> News Feed</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i> User</a>
+      <a href="#"><i class="fa fa-fw fa-user"></i> Admin</a>
     </div>
-    <div class="container">
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create_user">
-            Create user
-          </button>
+
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-toggle="modal"
+      data-target="#create_user"
+    >
+      Create User
+    </button>
+
+    <!--The container for the layout of the cards-->
+    <div class="row">
+      <!--Card 1-->
+      <div class="col card" data-toggle="modal" data-target="#view_user1">
+        <img class="banner-image" alt="placeholder" src="images/user1.jpg" />
+        <section class="title-text">
+          <h1>Admin</h1>
+          <p>First Name: Jane</p>
+          <p>Last Name: Damon</p>
+          <p>Email: janedamon@company.com</p>
+          <p>Cell: 071 875 2002</p>
+          <p>Landline: 021 650 8001</p>
+        </section>
+      </div>
+
+      <!--Card 2-->
+      <div class="col card" data-toggle="modal" data-target="#view_user2">
+        <img class="banner-image" alt="placeholder" src="images/user2.jpg" />
+        <section class="title-text">
+          <h1>Legal</h1>
+          <p>First Name: Josh</p>
+          <p>Last Name: Green</p>
+          <p>Email: joshgreen@company.com</p>
+          <p>Cell: 064 909 2898</p>
+          <p>Landline: 021 750 2000</p>
+        </section>
+      </div>
+
+      <!--Card 3-->
+      <div class="col card" data-toggle="modal" data-target="#view_user3">
+        <img class="banner-image" alt="placeholder" src="images/user3.jpg" />
+        <section class="title-text">
+          <h1>Dev</h1>
+          <p>First Name: Sophie</p>
+          <p>Last Name: Lang</p>
+          <p>Email: sophielang@company.com</p>
+          <p>Cell: 061 999 2818</p>
+          <p>Landline: 021 670 3030</p>
+        </section>
+      </div>
+
+      <!--Card 4-->
+      <div class="col card" data-toggle="modal" data-target="#view_user4">
+        <img class="banner-image" alt="placeholder" src="images/user4.jpg" />
+        <section class="title-text">
+          <h1>Admin</h1>
+          <p>First Name: Jessica</p>
+          <p>Last Name: Wales</p>
+          <p>Email: jessicawales@company.com</p>
+          <p>Cell: 073 504 8080</p>
+          <p>Landline: 021 455 5190</p>
+        </section>
+      </div>
+
+      <!--Card 5-->
+      <div class="col card" data-toggle="modal" data-target="#view_user5">
+        <img class="banner-image" alt="placeholder" src="images/user5.jpg" />
+        <section class="title-text">
+          <h1>Legal</h1>
+          <p>First Name: Cassie</p>
+          <p>Last Name: Wyngaardt</p>
+          <p>Email: cassiewygaardt@company.com</p>
+          <p>Cell: 081 808 3121</p>
+          <p>Landline: 021 896 5004</p>
+        </section>
+      </div>
+
+      <!--Card 6-->
+
+      <div class="col card" data-toggle="modal" data-target="#view_user6">
+        <img class="banner-image" alt="placeholder" src="images/user6.jpg" />
+        <section class="title-text">
+          <h1>Dev</h1>
+          <p>First Name: Cody</p>
+          <p>Last Name: Evans</p>
+          <p>Email: codyevans@company.com</p>
+          <p>Cell: 078 403 7227</p>
+          <p>Landline: 021 674 2874</p>
+        </section>
+      </div>
     </div>
-    ​
-<div class="modal" id="create_user">
-  <div class="modal-dialog modal-l">
-    <div class="modal-content">
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Create new user</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+    <div class="modal" id="create_user">
+      <div class="modal-dialog modal-l">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-muted">
+            <h6 class="modal-title">Complete the form</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body text-body">
+            <form action="action_page.php">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="lname">Last Name</label>
+                <input type="text" name="lname" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="button"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="cellphone">Cellphone</label>
+                <input
+                  type="tel"
+                  name="cellphone"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Landline">Landline</label>
+                <input
+                  type="tel"
+                  name="Landline"
+                  class="form-control"
+                  required
+                />
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
-​
-      <!-- Modal body -->
-      <div class="modal-body">
-        <form action="action.php" class="was-validated">
-          <!--First Name Field-->
-          <div class="form-group">
-            <label for="name">First Name</lable>
-            <input type="text"  class="form-control" name="name" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback"></div>
-          </div>
-          <!--Last Name-->
-          <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" class="form-control" name="lname" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Email-->
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Cellphone number-->
-          <div class="form-group">
-            <label for="cellphone">Cellphone Number</label>
-            <input type="tel" class="form-control" name="cellphone" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Landline-->
-          <div class="form-group">
-            <label for="tel">Landline</label>
-            <input type="text" class="form-control" name="landline" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Home Address-->
-          <div class="form-group">
-            <label for="address">Home Address</label>
-            <input type="text" class="form-control" name="address" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Next of Kin-->
-          <p><b>Next of Kin Information:</b></p>
-          <!--Fields for Next of kin-->
-          <!--Next of kin First Name-->
-          <div class="form-group">
-            <label for="name">First Name</lable>
-            <input type="text"  class="form-control" name="name" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback"></div>
-          </div>
-          <!--Next of kin Last Name-->
-          <div class="form-group">
-            <label for="lname">Last Name</label>
-            <input type="text" class="form-control" name="lname" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Next of kin relationship-->
-          <div class="form-group">
-            <label for="rship">Relationship</label>
-            <input type="text" class="form-control" name="r.ship" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-
-          <!--Next of kin email-->
-          <div class="form-group">
-            <label for="email">Email</label>
-            <input type="email" class="form-control" name="email" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Next of kin cellphone number-->
-          <div class="form-group">
-            <label for="cellphone">Cellphone Number</label>
-            <input type="tel" class="form-control" name="cellphone" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-          <!--Next of kin Landline-->
-          <div class="form-group">
-            <label for="landline">Landline</label>
-            <input type="tel" class="form-control" name="landline" required>
-            <div class="valid-feedback">Valid</div>
-            <div class="invalid-feedback">Invalid</div>
-          </div>
-
-
-
-
-
-
-
-
-
-
-        </form>
-      </div>
-​
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Save User</button>
-      </div>
-​
     </div>
-  </div>
+    <!--Modal 1-->
+    <div class="modal" id="view_user1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-muted">
+            <h6 class="modal-title">Additionnal Information</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
 
-</body>
+          <div class="modal-body text-body">
+            <p>Home Address: 102 Caledon Rd, Camps Bay 8001</p>
+            <p>Next of kin information</p>
+            <p>Name: Liiy</p>
+            <p>Relationship: Daughter</p>
+            <p>Cell: 061 090 4202</p>
+            <p>Email: lilydamon@yahoo.com</p>
+          </div>
 
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 2-->
+    <div class="modal" id="view_user2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-muted">
+            <h6 class="modal-title">Additional Information</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body text-body">
+            <p>Home Address: 20 Wales str, FishHoek 8600</p>
+            <p>Next of Kin Information</p>
+            <p>Name: Marlene</p>
+            <p>Relationship: Wife</p>
+            <p>Cell: 078 544 6336</p>
+            <p>Email: marleneGreen@outlook.com</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 3-->
+    <div class="modal" id="view_user3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+
+          <div class="modal-header text-muted">
+            <h6 class="modal-title">Additional Information</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body text-body">
+            <p>Home Address: 101 Long rd, Somerset West 4500</p>
+            <p>Next of Kin Information</p>
+            <p>Name: Byron</p>
+            <p>Relationship: Husband</p>
+            <p>Cell: 089 100 2545</p>
+            <p>Email: byronlang@gmail.com</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 4-->
+    <div class="modal" id="view_user4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+
+          <div class="modal-header text-muted">
+            <h5 class="modal-title">Additional Information</h5>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body text-body">
+            <p>Home Address: 145 Koodoo St, Kraaifontein 7409</p>
+            <p>Next of Kin Information</p>
+            <p>Name: Craig</p>
+            <p>Relationship: Husband</p>
+            <p>Cell: 079 504 6272</p>
+            <p>Email: craigwales@hotmail.com</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 5-->
+    <div class="modal" id="view_user5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+
+          <div class="modal-header text-muted">
+            <h6 class="modal-title">Additional Information</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body text-body">
+            <p>Home Address: 44 Brick Field, Salt River 7900</p>
+            <p>Next of Kin Information</p>
+            <p>Name: Carol</p>
+            <p>Relationship: Mother</p>
+            <p>Cell: 084 411 2325</p>
+            <p>Email: carolwyngaardt@gmail.com</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Modal 6-->
+    <div class="modal" id="view_user6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+
+          <div class="modal-header text-muted">
+            <h4 class="modal-title">Additional Information</h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <div class="modal-body text-body">
+            <p>Home Address: 20 Statice Heights, Crawford 7764</p>
+            <p>Next of Kin Information</p>
+            <p>Name: David</p>
+            <p>Relationship: Partner</p>
+            <p>Cell: 081 446 5110</p>
+            <p>Email: davidjosh@outlook.com</p>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
