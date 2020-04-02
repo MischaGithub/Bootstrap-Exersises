@@ -2,7 +2,7 @@
 <html>
   <head>
     <title>MyWeb</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale= 1" />
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -26,7 +26,7 @@
       <a href="#"><i class="fa fa-fw fa-user"></i> User</a>
       <a href="#"><i class="fa fa-fw fa-user"></i> Admin</a>
     </div>
-
+    <!--Creating User Button-->
     <button
       type="button"
       class="btn btn-primary"
@@ -35,6 +35,7 @@
     >
       Create User
     </button>
+    <!--End of Creating User Button-->
 
     <!--The container for the layout of the cards-->
     <div class="row">
@@ -117,7 +118,7 @@
         </section>
       </div>
     </div>
-
+    <!--Modal for the Create User-->
     <div class="modal" id="create_user">
       <div class="modal-dialog modal-l">
         <div class="modal-content">
@@ -129,20 +130,21 @@
             </button>
           </div>
 
+          <!--Form within the body of the modal-->
           <div class="modal-body text-body">
             <form action="action_page.php">
               <div class="form-group">
-                <label for="name">Name</label>
+                <label for="name">Name:</label>
                 <input type="text" name="name" class="form-control" required />
               </div>
 
               <div class="form-group">
-                <label for="lname">Last Name</label>
+                <label for="lname">Last Name:</label>
                 <input type="text" name="lname" class="form-control" required />
               </div>
 
               <div class="form-group">
-                <label for="email">Email</label>
+                <label for="email">Email:</label>
                 <input
                   type="button"
                   name="email"
@@ -152,7 +154,7 @@
               </div>
 
               <div class="form-group">
-                <label for="cellphone">Cellphone</label>
+                <label for="cellphone">Cellphone:</label>
                 <input
                   type="tel"
                   name="cellphone"
@@ -161,7 +163,7 @@
                 />
               </div>
               <div class="form-group">
-                <label for="Landline">Landline</label>
+                <label for="Landline">Landline:</label>
                 <input
                   type="tel"
                   name="Landline"
@@ -169,11 +171,68 @@
                   required
                 />
               </div>
+
+              <div class="form-group">
+                <label for="address">Address:</label>
+                <input
+                  type="text"
+                  name="address"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <p>Next of Kin Information</p>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" name="name" class="form-control" required />
+              </div>
+
+              <div class="form-group">
+                <label for="r.ship">Relationship:</label>
+                <input
+                  type="text"
+                  name="r.ship"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input
+                  type="email"
+                  name="email"
+                  class="form-control"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="cellphone">Cellphone:</label>
+                <input
+                  type="tel"
+                  name="cellphone"
+                  class="form-control"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
             </form>
           </div>
+          <!--End of Modal body-->
+
+          <!--Modal Footer-->
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">
+              Close
+            </button>
+          </div>
+          <!--End of Modal Footer-->
         </div>
       </div>
     </div>
+    <!--End of Modal for Create User-->
+
     <!--Modal 1-->
     <div class="modal" id="view_user1">
       <div class="modal-dialog">
@@ -199,6 +258,39 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#delete_user1"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Modal 1-->
+
+    <!--Creating the confirmation message for delete user1-->
+    <div class="modal" id="delete_user1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-danger">
+            <h6 class="modal-title">Are you sure?</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!--Modal body-->
+          <div class="modal-body text-body">
+            <p>By deleting user you will not be able to recover details</p>
+          </div>
+
+          <!--Modal Footer-->
+          <div class="modal-footer text-danger">
             <button type="button" class="btn btn-danger" data-dismiss="modal">
               Delete
             </button>
@@ -206,6 +298,7 @@
         </div>
       </div>
     </div>
+    <!--End of Delete Modal user 1-->
 
     <!--Modal 2-->
     <div class="modal" id="view_user2">
@@ -232,6 +325,37 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#delete_user2"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Modal 2-->
+
+    <!--Creating Delete Modal for User 2-->
+    <div class="modal" id="delete_user2">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-danger">
+            <h6 class="modal-title">Are you sure</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!--Modal Body-->
+          <div class="modal-body text-body">
+            <p>By deleting suer you will not be able to recover details</p>
+          </div>
+          <!--Modal Footer-->
+          <div class="modal-footer text-danger">
             <button type="button" class="btn btn-danger" data-dismiss="modal">
               Delete
             </button>
@@ -266,6 +390,36 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#delete_user3"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Modal 3-->
+    <!--Creating Delete Modal 3-->
+    <div class="modal" id="delete_user3">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-danger">
+            <h6 class="modal-title">Are you sure?</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!--Modal body-->
+          <div class="modal-body text-body">
+            <p>By deleting user you will not be able to recover details</p>
+          </div>
+          <!--Modal Footer-->
+          <div class="modal-footer text-danger">
             <button type="button" class="btn btn-danger" data-dismiss="modal">
               Delete
             </button>
@@ -273,6 +427,7 @@
         </div>
       </div>
     </div>
+    <!--End of Creating Delete Modal for User 3-->
 
     <!--Modal 4-->
     <div class="modal" id="view_user4">
@@ -300,6 +455,36 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#delete_user4"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Modal 4-->
+    <!--Creating Delete Modal for user 4-->
+    <div class="modal" id="delete_user4">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-danger">
+            <h6 class="modal-title">Are you sure?</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!--Modal Body-->
+          <div class="modal-body text-body">
+            <p>By deleting user you will not be able to recover details</p>
+          </div>
+          <!--Modal Footer-->
+          <div class="modal-footer text-danger">
             <button type="button" class="btn btn-danger" data-dismiss="modal">
               Delete
             </button>
@@ -307,6 +492,7 @@
         </div>
       </div>
     </div>
+    <!--End of Delete Modal for user 4-->
 
     <!--Modal 5-->
     <div class="modal" id="view_user5">
@@ -334,6 +520,36 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#delete_user5"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End of Modal for User 5-->
+    <!--Creating Delete Modal for user 5-->
+    <div class="modal" id="delete_user5">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-danger">
+            <h6 class="modal-title">Are you sure?</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!--Modal body-->
+          <div class="modal-body text-body">
+            <p>By deleting user you will not be able to recover details</p>
+          </div>
+          <!--Modal Footer-->
+          <div class="modal-footer text-danger">
             <button type="button" class="btn btn-danger" data-dismiss="modal">
               Delete
             </button>
@@ -341,6 +557,7 @@
         </div>
       </div>
     </div>
+    <!--End of Delete Modal User 5-->
 
     <!--Modal 6-->
     <div class="modal" id="view_user6">
@@ -368,6 +585,35 @@
             <button type="button" class="btn btn-primary" data-dismiss="modal">
               Close
             </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              data-toggle="modal"
+              data-target="#delete_user6"
+            >
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Creating Delete Modal for User 6-->
+    <div class="modal" id="delete_user6">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!--Modal Header-->
+          <div class="modal-header text-danger">
+            <h6 class="modal-title">Are you sure?</h6>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+          <!--Modal Body-->
+          <div class="modal-body text-body">
+            <p>By deleting user you will not be able to recover details</p>
+          </div>
+          <!--Modal Footer-->
+          <div class="modal-footer text-danger">
             <button type="button" class="btn btn-danger" data-dismiss="modal">
               Delete
             </button>
@@ -375,5 +621,6 @@
         </div>
       </div>
     </div>
+    <!--End of Delete Modal User 6-->
   </body>
 </html>

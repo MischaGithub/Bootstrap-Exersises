@@ -44,13 +44,17 @@ body {
 }
 
 /*Making the container display the cards next to each other*/
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 32px 64px;
-  justify-content: center;
+@media screen and (max-width: 500px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 32px 64px;
+    justify-content: center;
+  }
 }
+
 /*Having the cards display*/
+
 .col {
   background-color: rgba(255, 255, 255, 0.05);
   margin: 8px;
@@ -80,16 +84,4 @@ body {
   font-size: 15px;
   padding: 0px;
   margin: 8px 0 16px 0;
-}
-
-.btn {
-  display: block;
-  border: none;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 14px;
-  margin: 4px 2px;
 }
