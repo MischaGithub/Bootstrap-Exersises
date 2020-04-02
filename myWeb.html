@@ -117,11 +117,134 @@
                 </section>
             </button>
 
- 
-
-
-
     </div>
+    <div class="container">
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#create_user">
+            Create user
+          </button>
+    </div>
+    ​
+<div class="modal" id="create_user">
+  <div class="modal-dialog modal-l">
+    <div class="modal-content">
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Create new user</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+​
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="action.php" class="was-validated">
+          <!--First Name Field-->
+          <div class="form-group">
+            <label for="name">First Name</lable>
+            <input type="text"  class="form-control" name="name" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <!--Last Name-->
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" name="lname" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Email-->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Cellphone number-->
+          <div class="form-group">
+            <label for="cellphone">Cellphone Number</label>
+            <input type="tel" class="form-control" name="cellphone" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Landline-->
+          <div class="form-group">
+            <label for="tel">Landline</label>
+            <input type="text" class="form-control" name="landline" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Home Address-->
+          <div class="form-group">
+            <label for="address">Home Address</label>
+            <input type="text" class="form-control" name="address" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Next of Kin-->
+          <p><b>Next of Kin Information:</b></p>
+          <!--Fields for Next of kin-->
+          <!--Next of kin First Name-->
+          <div class="form-group">
+            <label for="name">First Name</lable>
+            <input type="text"  class="form-control" name="name" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback"></div>
+          </div>
+          <!--Next of kin Last Name-->
+          <div class="form-group">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" name="lname" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Next of kin relationship-->
+          <div class="form-group">
+            <label for="rship">Relationship</label>
+            <input type="text" class="form-control" name="r.ship" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+
+          <!--Next of kin email-->
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Next of kin cellphone number-->
+          <div class="form-group">
+            <label for="cellphone">Cellphone Number</label>
+            <input type="tel" class="form-control" name="cellphone" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+          <!--Next of kin Landline-->
+          <div class="form-group">
+            <label for="landline">Landline</label>
+            <input type="tel" class="form-control" name="landline" required>
+            <div class="valid-feedback">Valid</div>
+            <div class="invalid-feedback">Invalid</div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </form>
+      </div>
+​
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Save User</button>
+      </div>
+​
+    </div>
+  </div>
+
 </body>
 
 </html>

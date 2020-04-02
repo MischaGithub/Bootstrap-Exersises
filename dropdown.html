@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<head>
+    <title>Dropdown Menu</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!--Stating brands as people mostly go for what suits them best-->
+        <h1>Brands</h1>
+        <p>A list of devices available</p>
+        <div class="dropdown">
+            <!--Making the button to list the content below-->
+          <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+            Devices
+          </button>
+
+          <div class="dropdown-menu">
+              <!--Creating the Mobile Phones header and the list of items per brand name-->
+            <h5 class="dropdown-header">Mobile Phones</h5>
+            <a class="dropdown-item" href="#">IPhone</a>
+            <a class="dropdown-item" href="#">Android</a>
+            <a class="dropdown-item" href="#">Blackberry</a>
+
+            <!--Creating the Laptop header and the list of item per brand name-->
+            <h5 class="dropdown-header">Laptops</h5>
+            <a class="dropdown-item" href="#">Dell</a>
+            <a class="dropdown-item" href="#">Lenova</a>
+            <a class="dropdown-item" href="#">HP</a>
+          </div>
+
+          <p>Please have a look at the button groups</p>
+
+          <div class="container">
+            <h2>Grouped Buttons</h2>
+            <p>Products and brands:</p>
+            <div class="btn-group">
+              <button type="button" class="btn btn-primary">IPhone</button>
+              <button type="button" class="btn btn-primary">Android</button>
+              <button type="button" class="btn btn-primary">BLackbery</button>
+              <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                Devices
+                </button>
+            
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</body>
