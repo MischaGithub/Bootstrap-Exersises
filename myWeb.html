@@ -133,16 +133,34 @@
           <!--Form within the body of the modal-->
           <div class="modal-body text-body">
             <form action="action_page.php">
+              <!--For the picture-->
+              <div class="form-group">
+                <label for="image">Picture</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="image"
+                  name="image"
+                  placeholder="Upload User Picture"
+                  required
+                />
+              </div>
+              <!--End of picture-->
+              <!--First Name Field-->
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" class="form-control" required />
               </div>
+              <!--End of First Name-->
 
+              <!--Last Name Field-->
               <div class="form-group">
                 <label for="lname">Last Name:</label>
                 <input type="text" name="lname" class="form-control" required />
               </div>
+              <!--End of Last Name-->
 
+              <!--Email Field-->
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input
@@ -152,7 +170,9 @@
                   required
                 />
               </div>
+              <!--End of Email-->
 
+              <!--Cellphone Field-->
               <div class="form-group">
                 <label for="cellphone">Cellphone:</label>
                 <input
@@ -162,6 +182,9 @@
                   required
                 />
               </div>
+              <!--End of Cellphone-->
+
+              <!--Landline Field-->
               <div class="form-group">
                 <label for="Landline">Landline:</label>
                 <input
@@ -171,7 +194,9 @@
                   required
                 />
               </div>
+              <!--End of Landline-->
 
+              <!--Address Field-->
               <div class="form-group">
                 <label for="address">Address:</label>
                 <input
@@ -181,12 +206,19 @@
                   required
                 />
               </div>
+              <!--End of Address-->
+
+              <!--Next of Kin Section-->
               <p>Next of Kin Information</p>
+
+              <!--Next of kin Name-->
               <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" name="name" class="form-control" required />
               </div>
+              <!--End of Next of kin Name-->
 
+              <!--Next of kin relationship-->
               <div class="form-group">
                 <label for="r.ship">Relationship:</label>
                 <input
@@ -196,7 +228,9 @@
                   required
                 />
               </div>
+              <!--End of Next of kin Relationship-->
 
+              <!--Next of kin Email-->
               <div class="form-group">
                 <label for="email">Email:</label>
                 <input
@@ -206,7 +240,9 @@
                   required
                 />
               </div>
+              <!--End of Next of kin Email-->
 
+              <!--Next of kin Cellphone-->
               <div class="form-group">
                 <label for="cellphone">Cellphone:</label>
                 <input
@@ -216,7 +252,11 @@
                   required
                 />
               </div>
+              <!--End of Next of kin Cellphone-->
+
+              <!--Creating Submit Button-->
               <button type="submit" class="btn btn-primary">Submit</button>
+              <!--End of submit button-->
             </form>
           </div>
           <!--End of Modal body-->

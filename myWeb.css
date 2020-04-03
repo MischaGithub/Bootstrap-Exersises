@@ -44,13 +44,12 @@ body {
 }
 
 /*Making the container display the cards next to each other*/
-@media screen and (max-width: 500px) {
-  .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 32px 64px;
-    justify-content: center;
-  }
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 32px 64px;
+  justify-content: center;
 }
 
 /*Having the cards display*/
@@ -84,4 +83,9 @@ body {
   font-size: 15px;
   padding: 0px;
   margin: 8px 0 16px 0;
+}
+
+#create_user {
+  padding: 10px;
+  margin: 20 px;
 }
